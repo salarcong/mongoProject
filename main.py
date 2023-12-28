@@ -5,3 +5,5 @@ if __name__ == '__main__':
     client = MongoClient(URL)
     database = client['cursoMongoDB']
     collection = database['users']
+
+    print('Conexion establecida exitosamente')
