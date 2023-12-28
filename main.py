@@ -1,2 +1,7 @@
+from config import URL
+from pymongo import MongoClient
+
 if __name__ == '__main__':
-    print('Hola mundo, desde el taller de MongoDB')
+    client = MongoClient(URL)
+    database = client['cursoMongoDB']
+    collection = database['users']
